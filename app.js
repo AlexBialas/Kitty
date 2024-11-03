@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn2 = document.getElementById("btn2");
   const btn3 = document.getElementById("btn3");
   const btn4 = document.getElementById("btn4");
+  const menubtn = document.getElementById("menubtn");
+  const menu = document.getElementById("menu");
+
+  menubtn.addEventListener("click", () => {
+    menu.classList.toggle("dis");
+  });
 
   btn1.addEventListener("click", () => {
     head.style.background = "url('cat1.png') no-repeat center center / cover";
@@ -67,3 +73,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateBackground();
 });
+
+/*popraw menu hamburger z transition, responsywnosc, 25:00 */
